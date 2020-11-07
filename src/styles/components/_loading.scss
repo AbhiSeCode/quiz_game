@@ -1,0 +1,15 @@
+.loading {
+  font-size: $font-size-m;
+  text-align: center;
+  color: #ffffff;
+  background-color: rgba($color: #000000, $alpha: 0.9);
+  width: 30%;
+  margin: auto;
+}
+
+@media only screen and (max-width: 700px) {
+  .loading {
+    font-size: $font-size-l;
+    width: auto;
+  }
+}

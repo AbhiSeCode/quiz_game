@@ -1,0 +1,27 @@
+.table {
+  background-color: rgba($color: #ffffff, $alpha: 0.8);
+  border: 2px solid #000000;
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+th {
+  border-bottom: 1px solid #000000;
+  font-size: $font-size-m;
+  font-weight: bold;
+}
+
+td {
+  font-size: $font-size-m;
+  font-weight: 300;
+}
+
+@media only screen and (max-width: 700px) {
+  .table {
+    width: 100%;
+  }
+  th {
+    font-size: $font-size-m;
+  }
+}

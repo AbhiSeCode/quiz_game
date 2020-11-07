@@ -1,0 +1,68 @@
+.next {
+  border: none;
+  outline: none;
+  padding: $size-s;
+  border-radius: 0.8rem;
+  font-size: $font-size-m;
+  margin: $size-s;
+  width: 15rem;
+  background-color: #020202;
+  color: #ffffff;
+  &.disabled {
+    visibility: hidden;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.copy-button {
+  width: 30%;
+  outline: none;
+  margin: 0 auto;
+  border: none;
+  padding: $size-s;
+  border-radius: 0.8rem;
+  font-size: $font-size-m;
+  background-color: #d6d3d3;
+  color: #000000;
+  transition: background-color 0.5s;
+  &:hover {
+    background-color: darken($color: #fcfcfc, $amount: 30%);
+    cursor: grab;
+  }
+}
+.option {
+  font-size: $font-size-s;
+  font-weight: bold;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  background-color: #3fa6e2;
+  padding: $size-s;
+  flex: 1 1 50rem;
+  height: 10rem;
+  margin: $size-s;
+  word-break: break-all;
+  &.disabled {
+    background-color: #63bcf0;
+    &:hover {
+      cursor: not-allowed;
+    }
+  }
+  &.right {
+    background-color: #12a826;
+  }
+  &.wrong {
+    background-color: #ff0011;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .option {
+    flex: 1 1 40%;
+  }
+}

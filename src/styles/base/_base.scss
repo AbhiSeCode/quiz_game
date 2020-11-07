@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
+
+//font-size
+$font-size-s: 1.8rem;
+$font-size-m: 2.4rem;
+$font-size-l: 3.4rem;
+
+//size
+$size-s: 1.2rem;
+$size-m: 1.5rem;
+$size-l: 1.8rem;
+$size-xl: 2.4rem;
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body {
+  background-image: url("https://hmsto.blob.core.windows.net/pub-images/happy_learning.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  font-size: 1.6rem;
+  font-family: "Itim", cursive;
+}
+
+header {
+  display: block;
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+}
+h1 {
+  background-color: rgba($color: #0400fc, $alpha: 0.8);
+  font-size: $font-size-l;
+  color: #ffffff;
+  font-weight: 300;
+  margin: 0 auto;
+}
+h3 {
+  font-size: $font-size-l;
+  color: #f10000;
+  margin: $size-m;
+}
+h4 {
+  font-size: $font-size-m;
+  word-break: break-word;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 700px) {
+  header {
+    width: auto;
+  }
+  h2 {
+    width: auto;
+  }
+}
